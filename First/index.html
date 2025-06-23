@@ -5,8 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="icon" type="image/png" href="./public/favicon.png">
+    <script src="js/toggle-style.js" defer></script>
     <title>First Webpage</title>
 </head>
 
@@ -15,9 +16,13 @@
         <h1>Frontend Development</h1>
         <p>Learn the core technologies of the web</p>
         <nav>
-            <ul>
+            <ul class="nav-wrapper">
                 <li><a href="#why-this-course">Why This Course</a></li>
                 <li><a href="#main-parts">Main Parts</a></li>
+                <li><button type="button" id="toggle-style-btn1">Style 1</button></li>
+                <li><button type="button" id="toggle-style-btn2">Style 2</button></li>
+                <li><button type="button" id="toggle-style-btn3">Style 3</button></li>
+                <li><button type="button" id="toggle-style-btn">No Style</button></li>
             </ul>
         </nav>
     </header>
@@ -29,56 +34,79 @@
                 Master the core technologies used by professional developers worldwide.
                 No prior experience needed — just your curiosity and commitment!
             </p>
-            
+
         </section>
+
         <section id="main-parts">
             <h2>Main Parts</h2>
-            <h3>HTML</h3>
-            <ul>
-                <li>Creates the foundation of all web content</li>
-                <li>Defines page layout and elements</li>
-                <li>Easy to learn, powerful to use</li>
-            </ul>
-            <figure>
-                <img src="./public/html.png" alt="HTML logo">
-                <figcaption>Essential for <em>SEO</em> and <em>accessibility</em>.</figcaption>
-            </figure>
-            <h3>CSS</h3>
-            <ol>
-                <li>Styles your pages beautifully</li>
-                <li>Enables responsive layouts</li>
-                <li>Makes your site visually appealing</li>
-            </ol>
-            <figure>
-                <img src="./public/css.png" alt="CSS logo">
-                <figcaption>Controls <strong>animations</strong> and <strong>effects</strong></figcaption>
-            </figure>
-            <h3>JavaScript</h3>
-            <ul>
-                <li>Handles user actions and events</li>
-                <li>Powers dynamic content updates</li>
-                <li>Bridges frontend with backend</li>
-            </ul>
-            <figure>
-                <img src="./public/js.png" alt="JS logo">
-                <figcaption>Used in all modern websites</figcaption>
-            </figure>
-            <h3>React js</h3>
-            <ol>
-                <li>Builds fast, scalable apps</li>
-                <li>Reusable components save time</li>
-                <li>In-demand skill in the job market</li>
-            </ol>
-            <figure>
-                <img src="./public/react.png" alt="React logo">
-                <figcaption>Backed by a huge community</figcaption>
-            </figure>
+
+            <div class="part-wrapper"> <!--Include 'part' classes only when using styles3-->
+                <div class="part-text">
+                    <h3>HTML</h3>
+                    <ul>
+                        <li>Creates the foundation of all web content</li>
+                        <li>Defines page layout and elements</li>
+                        <li>Easy to learn, powerful to use</li>
+                    </ul>
+                </div>
+                <figure>
+                    <img src="./public/html.png" alt="HTML logo">
+                    <figcaption>Essential for <em>SEO</em> and <em>accessibility</em>.</figcaption>
+                </figure>
+            </div>
+
+            <div class="part-wrapper">
+                <div class="part-text">
+                    <h3>CSS</h3>
+                    <ol>
+                        <li>Styles your pages beautifully</li>
+                        <li>Enables responsive layouts</li>
+                        <li>Makes your site visually appealing</li>
+                    </ol>
+                </div>
+                <figure>
+                    <img src="./public/css.png" alt="CSS logo">
+                    <figcaption>Controls <strong>animations</strong> and <strong>effects</strong></figcaption>
+                </figure>
+            </div>
+
+            <div class="part-wrapper">
+                <div class="part-text">
+                    <h3>JavaScript</h3>
+                    <ul>
+                        <li>Handles user actions and events</li>
+                        <li>Powers dynamic content updates</li>
+                        <li>Bridges frontend with backend</li>
+                    </ul>
+                </div>
+                <figure>
+                    <img src="./public/js.png" alt="JS logo">
+                    <figcaption>Used in all modern websites</figcaption>
+                </figure>
+            </div>
+
+            <div class="part-wrapper">
+                <div class="part-text">
+                    <h3>React js</h3>
+                    <ol>
+                        <li>Builds fast, scalable apps</li>
+                        <li>Reusable components save time</li>
+                        <li>In-demand skill in the job market</li>
+                    </ol>
+                </div>
+                <figure>
+                    <img src="./public/react.png" alt="React logo">
+                    <figcaption>Backed by a huge community</figcaption>
+                </figure>
+            </div>
         </section>
+
         <section>
             <h2>Conclusion</h2>
             <p>Master these technologies to become a successful frontend developer.
                 Join our course and start your journey today!
             </p>
+        </section>
     </main>
     <footer>
         <p>

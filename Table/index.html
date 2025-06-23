@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <h1>Class 10 - Weekly Timetable</h1>
+
+    <table border="outline=1" cellpadding="5" cellspacing="0" id="timetable">
+        <caption>Weekly Class Schedule (Mon to Fri)</caption>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Period 1</th>
+                <th>Period 2</th>
+                <th>Period 3</th>
+                <th>Period 4</th>
+                <th>Period 5</th>
+                <th>Period 6</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Math</td>
+                <td colspan="2">Science (Lab)</td>
+                <td>English</td>
+                <td>PE</td>
+                <td>History</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td rowspan="2">Geography</td>
+                <td>Math</td>
+                <td>English</td>
+                <td>Science</td>
+                <td>Computer</td>
+                <td>Art</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td colspan="2">Computer (Lab)</td>
+                <td>PE</td>
+                <td>Math</td>
+                <td>Science</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>English</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Geography</td>
+                <td>Art</td>
+                <td>Library</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td colspan="6">Field Trip / Activities</td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <button id="toggle-style" type="button">Toggle Style</button>
+</body>
+
+</html>
